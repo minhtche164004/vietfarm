@@ -1,31 +1,17 @@
 <template>
     <main-header />
     <section class="container">
-        <router-link to="/shop" id="back"
-            ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-left"
-                viewBox="0 0 16 16"
-            >
-                <path
-                    fill-rule="evenodd"
-                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-                /></svg
-        ></router-link>
+        <router-link to="/shop" id="back"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg></router-link>
         <div class="cart-item" v-if="loaded">
             <div class="image-section">
                 <img :src="activeImage" class="main-img" />
                 <div class="img-thumbnails">
-                    <img
-                        v-for="(image, index) in product.images.slice(0, 4)"
-                        :key="index"
-                        :src="image"
-                        class="thumbnail"
-                        @click="setActiveImage(index)"
-                    />
+                    <img v-for="(image, index) in product.images.slice(0, 4)" :key="index" :src="image" class="thumbnail"
+                        @click="setActiveImage(index)" />
                 </div>
             </div>
             <div class="product-details">
@@ -41,17 +27,8 @@
                 </select>
                 <p class="weak" v-if="validSize">Please select a size</p>
                 <div class="add-to-cart">
-                    <input
-                        type="number"
-                        placeholder="QTY"
-                        min="1"
-                        max="10"
-                        v-model="quantity"
-                    />
-                    <action-button
-                        btnvalue="Add To Cart"
-                        @click="addItemToCart"
-                    />
+                    <input type="number" placeholder="QTY" min="1" max="10" v-model="quantity" />
+                    <action-button btnvalue="Add To Cart" @click="addItemToCart" />
                 </div>
                 <h4>Product Details</h4>
                 <p class="product-description">
@@ -70,9 +47,9 @@ import ActionButton from "@/components/ActionButton.vue";
 import MainHeader from "@/components/MainHeader.vue";
 import ProductPreloader from "@/components/preloaders/ProductPreloader.vue";
 import { mapActions, mapState } from "vuex";
-
+import numeral from "numeral";
 import axios from "axios";
-
+import { useToast } from "vue-toastification";
 export default {
     name: "CartItemView",
     components: {
@@ -106,20 +83,22 @@ export default {
                     size: this.size,
                 };
                 this.add_to_cart(item);
+                useToast().success('Thêm vào giỏ hàng thành công!', { timeout: 1000 })
             }
         },
     },
     computed: {
         ...mapState(["user", "cart"]),
         formattedPrice() {
-            return this.product.currency + " " + this.product.price.toFixed(2);
+            return numeral(this.product.price).format('0,0') + " " + this.product.currency;
         },
     },
-    async created() {
-        let res = await axios.get(
-            `https://gorana.onrender.com/products/${this.$route.params.id}`
-        );
-        this.product = res.data;
+    created() {
+        // let res = await axios.get(
+        //     `https://gorana.onrender.com/products/${this.$route.params.id}`
+        // );
+
+        this.product = this.$store.state.productsfix.find(product => product._id == this.$route.params.id);
         this.loaded = true;
         this.activeImage = this.product.images[0];
     },
@@ -225,6 +204,7 @@ export default {
     .cart-item {
         flex-direction: column;
     }
+
     .image-section,
     .product-details {
         width: 100%;
@@ -233,6 +213,7 @@ export default {
     .image-section {
         padding-top: 2rem;
     }
+
     .image-section a {
         top: -2rem;
         left: 0;

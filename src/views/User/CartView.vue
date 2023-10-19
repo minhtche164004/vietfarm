@@ -11,12 +11,12 @@
                     <table>
                         <thead>
                             <tr>
-                                <td>Remove</td>
-                                <td>Image</td>
-                                <td>Product</td>
-                                <td>Price</td>
-                                <td>Quantity</td>
-                                <td>Subtotal</td>
+                                <td>Xóa</td>
+                                <td>Ảnh</td>
+                                <td>Sản phẩm</td>
+                                <td>Giá</td>
+                                <td>Số lượng</td>
+                                <td>Đơn giá</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,10 +46,9 @@
                                         class="img"
                                     />
                                 </td>
-                                <td>{{ item.brand }}({{ item.size }})</td>
+                                <td>{{ item.name }}</td>
                                 <td>
-                                    {{ item.currency }}
-                                    {{ item.price.toFixed(2) }}
+                                    {{ formattedPrice(item.price,item.currency) }}
                                 </td>
                                 <td>
                                     <input
@@ -62,9 +61,8 @@
                                     />
                                 </td>
                                 <td>
-                                    {{ item.currency }}
                                     {{
-                                        (item.quantity * item.price).toFixed(2)
+                                        formattedPrice((item.quantity * item.price),item.currency)
                                     }}
                                 </td>
                             </tr>
@@ -89,7 +87,7 @@
                             <thead>
                                 <tr>
                                     <td>Cart Total</td>
-                                    <td>NGN {{ subtotal.toFixed(2) }}</td>
+                                    <td>{{ formattedPrice(subtotal) }}</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -101,8 +99,8 @@
                                     <td><strong>Total</strong></td>
                                     <td>
                                         <strong
-                                            >NGN
-                                            {{ subtotal.toFixed(2) }}</strong
+                                            >
+                                            {{ formattedPrice(subtotal) }}</strong
                                         >
                                     </td>
                                 </tr>
@@ -138,6 +136,7 @@ import ActionButton from "@/components/ActionButton.vue";
 import MainHeader from "@/components/MainHeader.vue";
 import MainFooter from "@/components/MainFooter.vue";
 import { mapState, mapActions, mapGetters } from "vuex";
+import numeral from "numeral";
 
 export default {
     components: { SubHeader, ActionButton, MainHeader, MainFooter },
@@ -164,6 +163,14 @@ export default {
     computed: {
         ...mapState(["cart"]),
         ...mapGetters(["subtotal"]),
+        formattedPrice() {
+            return (price, currency) =>{
+                if(currency!=undefined){
+                return numeral(price).format('0,0') + " " + currency;
+                }else
+                return numeral(price).format('0,0') + " VND";
+            }
+        },
     },
     mounted() {
         this.cart.forEach((item) => {

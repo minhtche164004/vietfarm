@@ -1,16 +1,23 @@
 <template>
     <main-header />
-    <sub-header heading="Sản phẩm"/>
+    <sub-header heading="Sản phẩm" />
     <div class="container">
+        <a-space>
+            <a-select style="width: 160px;" v-model:value="filters">
+                <a-select-option :value="1">Tất cả</a-select-option>
+                <a-select-option :value="2">Đồ khô</a-select-option>
+                <a-select-option :value="3">Các sản phẩm khác</a-select-option>
+            </a-select>
+        </a-space>
         <div class="product__container" v-if="loaded">
             <product-card v-for="(product, index) in products" :key="index" :productId="product._id"
                 :productName="product.name" :brand="product.brand" :price="product.price" :currency="product.currency"
                 :ratings="product.rating" :image_url="product.images[0]" :in_stock="product.in_stock" />
         </div>
-        <product-preloader v-else> Sản phẩm đang được load... </product-preloader>
+        <product-preloader v-else> Loading... </product-preloader>
     </div>
     <div class="pagination">
-        <vue-awesome-paginate :total-items="total" :max-pages-shown="5" v-model="page" :show-breakpoint-buttons="false"
+        <vue-awesome-paginate :total-items="45" :max-pages-shown="5" v-model="page" :show-breakpoint-buttons="false"
             :on-click="fetchNewPage" paginate-buttons-class="btn" active-page-class="btn-active"
             back-button-class="back-btn" next-button-class="next-btn" :hide-prev-next-when-ends="true">
             <template #prev-button>
@@ -28,7 +35,7 @@
                 </svg>
             </template>
         </vue-awesome-paginate>
-        
+
     </div>
     <main-footer />
 </template>
@@ -58,12 +65,19 @@ export default {
             page: 1,
             loaded: false,
             total: 0,
+            filters: 1,
         };
     },
     created() {
-        this.getProducts();
+        // this.getProducts();
+        this.getProductsVietFarm();
+
     },
     methods: {
+        getProductsVietFarm() {
+            this.products = this.$store.state.productsfix
+            this.loaded = true
+        },
         getProducts() {
             this.loaded = false;
             axios
@@ -76,14 +90,15 @@ export default {
                         );
                         return product;
                     });
+                    console.log(this.products)
                     this.total = res.data.total_pages;
-                    // console.log(this.total)
                     this.loaded = true;
                 })
                 .catch((err) => {
                     console.log(err);
                     this.loaded = false;
                 });
+            this.loaded = true;
         },
         fetchNewPage(page) {
             this.page = page;
@@ -95,6 +110,14 @@ export default {
 </script>
 
 <style>
+.product__card img {
+    width: 242px;
+    /* Điều chỉnh chiều rộng theo ý muốn */
+    height: 322.66px;
+    /* Điều chỉnh chiều cao theo ý muốn */
+    /* object-fit: cover; */
+}
+
 .btn {
     border: none;
     background-color: #f2f2f2;

@@ -39,6 +39,22 @@
                     Các sản phẩm OCOP được sản xuất từ các vùng làng nghề, hộ kinh doanh truyền thống của vùng miền được
                     sáng tạo bởi sự cần cù, chịu khó của người lao động địa phương, kinh nghiệm sống và văn hóa lâu đời kết
                     tinh trong sản phẩm.
+                    Các sản phẩm OCOP được sản xuất từ các vùng làng nghề, hộ kinh doanh truyền thống của vùng miền được
+                    sáng tạo bởi sự cần cù, chịu khó của người lao động địa phương, kinh nghiệm sống và văn hóa lâu đời kết
+                    tinh trong sản phẩm.<br><br>
+                    Đến nay tỉnh Nam Định có 189 xã, thị trấn (chiếm 92,65% tổng số xã, thị trấn) được công nhận đạt chuẩn
+                    NTM nâng cao, trong đó có 18 xã (chiếm 9,57% tổng số xã) được công nhận đạt chuẩn NTM kiểu mẫu. Ngoài
+                    ra, có 6 xã đang tích cực hoàn thiện hồ sơ, tiêu chí xã NTM kiểu mẫu để đề nghị xét công nhận xã đạt
+                    chuẩn NTM kiểu mẫu.
+                    - Tỉnh Nam Định xác định xây dựng các mô hình thôn, xóm NTM kiểu mẫu là nền tảng để xây dựng xã NTM nâng
+                    cao, kiểu mẫu, đến nay toàn tỉnh có trên 685 thôn, xóm đạt chuẩn NTM kiểu mẫu.
+                    - Tập trung chỉ đạo, triển khai thực hiện Đề án xây dựng thí điểm mô hình huyện NTM kiểu mẫu “Sáng,
+                    Xanh, Sạch, Đẹp để phát triển bền vững” tại huyện Hải Hậu; đồng thời tỉnh đang tập trung chỉ đạo huyện
+                    Giao Thủy và huyện Xuân Trường phấn đấu xây dựng huyện NTM kiểu mẫu giai đoạn 2021-2025Đến nay xây dựng
+                    và phát triển được 330 sản phẩm OCOP từ 3 sao trở lên, cụ thể 47 sản phẩm OCOP 4 sao và 283 sản phẩm
+                    OCOP 3 sao; 02 sản phẩm OCOP 5 sao
+
+
                 </p>
             </div>
         </article>
@@ -81,7 +97,7 @@ article {
 }
 
 h1 {
-    color: linear-gradient(90deg, rgba(1,76,41,1) 0%, rgba(35,240,11,1) 100%) !important;
+    color: linear-gradient(90deg, rgba(1, 76, 41, 1) 0%, rgba(35, 240, 11, 1) 100%) !important;
     text-align: center;
 }
 

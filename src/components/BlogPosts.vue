@@ -11,7 +11,7 @@
             <h4>{{ title }}</h4>
             <p>{{ content }}</p>
             <a href="#"
-                >continue reading
+                >tiếp tục đọc
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

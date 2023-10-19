@@ -6,6 +6,13 @@ const store = createStore({
         user: null,
         cart: [],
         products: [],
+        productsfix: [
+            { _id: 1, brand: "Minh Duong", currency: "VND", description: "Đây là sản phẩm", in_stock: true, name: "Khoai tây sấy vị tự nhiên", gender: null, price: 100000, images: ["https://orion.vn/media/znbmsrwh/otars-natural-small.png"] },
+            { _id: 2, brand: "Minh Duong", currency: "VND", description: "Đây là sản phẩm", in_stock: true, name: "Khoai tây sấy vị tự nhiên", gender: null, price: 100000, images: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREk2ygny7PLPy0OhBIzjpkio4-UnkaE9tJgg&usqp=CAU"] },
+            { _id: 3, brand: "Minh Duong", currency: "VND", description: "Đây là sản phẩm", in_stock: true, name: "Khoai tây sấy vị tự nhiên", gender: null, price: 100000, images: ["https://www.farmstore.vn/uploads/2020/02/khoai-tay-say-cong-mon-an-vat-khoai-khau-1024x683.jpg"] },
+            { _id: 4, brand: "Minh Duong", currency: "VND", description: "Đây là sản phẩm", in_stock: true, name: "Khoai tây sấy vị tự nhiên", gender: null, price: 100000, images: ["https://orion.vn/media/znbmsrwh/otars-natural-small.png"] },
+            { _id: 5, brand: "Minh Duong", currency: "VND", description: "Đây là sản phẩm", in_stock: true, name: "Khoai tây sấy vị tự nhiên", gender: null, price: 100000, images: ["https://orion.vn/media/znbmsrwh/otars-natural-small.png"] },
+        ],
     },
     mutations: {
         loginUser(state, payload) {

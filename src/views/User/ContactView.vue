@@ -1,78 +1,42 @@
 <template>
     <main-header />
-    <sub-header
-        heading="#stayintouch"
-        subHeading="With our 24/7 hotlines we will attend to you."
-    />
+    <sub-header heading="#stayintouch" subHeading="With our 24/7 hotlines we will attend to you." />
     <div class="container">
         <div class="map-section">
             <div class="map-details">
-                <span>Get in touch</span>
-                <h3>Visit one of our agency locations or contact us today</h3>
-                <h4>Head Office</h4>
+                <!-- <span>Get in touch</span> -->
+                <h3>Hãy ghé thăm trụ sở chính của chúng tôi hoặc liên hệ với chúng tôi ngay hôm nay!</h3>
+                <h4>Trụ sở chính</h4>
                 <ul>
                     <li>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-map"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-map"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z" />
                         </svg>
-                        <p>Ludhiana</p>
+                        <p>Đại học FPT Hà Nội</p>
                     </li>
                     <li>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-envelope"
-                            viewBox="0 0 16 16"
-                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope" viewBox="0 0 16 16">
                             <path
-                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                            />
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                         </svg>
-                        <p>2222@gmail.222</p>
+                        <p>...</p>
                     </li>
                     <li>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-telephone-fill"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                         </svg>
-                        <p>+01-2222-222/+01-2222-222</p>
+                        <p>0393529541</p>
                     </li>
                     <li>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
-                            fill="currentColor"
-                            class="bi bi-clock"
-                            viewBox="0 0 16 16"
-                        >
-                            <path
-                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                            />
-                            <path
-                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
                         </svg>
                         <p>Monday to Saturday: 8:00am to 8:00pm</p>
                     </li>
@@ -80,14 +44,9 @@
             </div>
             <div class="map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143322.8742573402!2d-4.37254028755512!3d55.855380652686954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562056ceeb%3A0x71e683b805ef511e!2sGlasgow%2C%20UK!5e0!3m2!1sen!2sus!4v1651228491855!5m2!1sen!2sus"
-                    width="600"
-                    height="450"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4911477779788!2d105.52392847500008!3d21.01302518831931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc60e7d3f19%3A0x2be9d7d0b5abcbf4!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1697612054207!5m2!1svi!2s"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
@@ -106,23 +65,16 @@
                     <input type="text" placeholder="Subject" required />
                 </div>
                 <div class="form-control">
-                    <textarea
-                        id=""
-                        cols="30"
-                        rows="10"
-                        placeholder="Your Message"
-                    ></textarea>
+                    <textarea id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 </div>
                 <action-button btnvalue="Submit" />
             </form>
             <div class="employers-section">
-                <div
-                    class="employer"
-                    v-for="(employer, index) in employers"
-                    :key="index"
-                >
+                <div class="employer" v-for="(employer, index) in employers" :key="index">
                     <div class="employer-img">
-                        <img :src="employer.image" :alt="employer.name" />
+                        <a-avatar :size="64" :src="employer.image" :alt="employer.name" />
+                        <!-- <img :src="employer.image" :alt="employer.name" /> -->
+                        <!-- </a-avatar> -->
                     </div>
                     <div class="employer-info">
                         <h4>{{ employer.name }}</h4>
@@ -149,25 +101,46 @@ export default {
         return {
             employers: [
                 {
-                    image: require("@/assets/images/people/1.webp"),
-                    name: "Jassa Franklin",
+                    image: require("@/assets/images/people/lephuonglien.jpg"),
+                    name: "Lê Phương Liên",
                     position: "Chief Execution Officer (CEO)",
-                    phone: "+1-222-222-2222",
-                    email: "contact@gmail.com",
+                    phone: "0888749551",
+                    email: "lienlp@vietfarm.vn",
                 },
                 {
-                    image: require("@/assets/images/people/2.webp"),
-                    name: "Jassa Smith",
-                    position: "Senior Marketing Manager",
+                    image: require("@/assets/images/people/nguyendiepanh.jpg"),
+                    name: "Nguyễn Diệp Anh",
+                    position: "Chief Marketing Officer (CMO)",
                     phone: "+1-222-222-2222",
-                    email: "contact@yahoo.com",
+                    email: "anhnd@vietfarm.vn",
                 },
                 {
-                    image: require("@/assets/images/people/3.webp"),
-                    name: "Jassa Stone",
-                    position: "Warehouse Manager",
+                    image: require("@/assets/images/people/nguyenphuonguyen.jpg"),
+                    name: "Nguyễn Phương Uyên",
+                    position: "Creative",
                     phone: "+1-222-222-2222",
-                    email: "contact@gmail.com",
+                    email: "uyennp@vietfarm.vn",
+                },
+                {
+                    image: require("@/assets/images/people/tranngocthuong.jpg"),
+                    name: "Trần Ngọc Thương",
+                    position: "Chief Financial Officer (CFO) and Human Resources (HR)",
+                    phone: "0989924799",
+                    email: "thuongtn@vietfarm.vn",
+                },
+                {
+                    image: require("@/assets/images/people/hoangminhhung.jpg"),
+                    name: "Hoàng Minh Hùng",
+                    position: "IT Support",
+                    phone: "0971617185",
+                    email: "hunghm@vietfarm.vn",
+                },
+                {
+                    image: require("@/assets/images/people/trinhcongminh.jpg"),
+                    name: "Trịnh Công Minh",
+                    position: "Chief technology officer (CTO)",
+                    phone: "+1-222-222-2222",
+                    email: "minhtc@vietfarm.vn",
                 },
             ],
         };
@@ -241,6 +214,7 @@ form h3 {
 .form-control {
     padding-bottom: 2rem;
 }
+
 input,
 textarea {
     width: 100%;
@@ -269,6 +243,7 @@ textarea:hover {
 .employer-img img {
     max-width: 100%;
     height: auto;
+
 }
 
 .employer-info {
@@ -292,10 +267,12 @@ textarea:hover {
         width: 50%;
     }
 }
+
 @media (max-width: 599px) {
     .map-section {
         flex-direction: column;
     }
+
     .map-details,
     .map,
     form {
