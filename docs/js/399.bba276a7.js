@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkVietFarm"]=self["webpackChunkVietFarm"]||[]).push([[399],{8399:function(e,n,r){r.r(n),r.d(n,{default:function(){return s}});var t=r(3396);function a(e,n,r,a,c,i){return(0,t.wg)(),(0,t.iD)("h4",null,"Finance Metrics Page")}var c={name:"FinanceMetrics"},i=r(89);const u=(0,i.Z)(c,[["render",a]]);var s=u}}]);
+//# sourceMappingURL=399.bba276a7.js.map
