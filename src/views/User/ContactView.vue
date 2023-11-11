@@ -52,20 +52,20 @@
 
         <div class="form-section">
             <form>
-                <span>Leave a message</span>
-                <h3>We love to hear from you</h3>
+                <span>Để lại lời nhắn</span>
+                <h3>Chúng tôi muốn nghe từ bạn</h3>
 
                 <div class="form-control">
-                    <input type="text" placeholder="Your name" required />
+                    <input type="text" placeholder="Tên của bạn" required />
                 </div>
                 <div class="form-control">
                     <input type="email" placeholder="E-mail" required />
                 </div>
                 <div class="form-control">
-                    <input type="text" placeholder="Subject" required />
+                    <input type="text" placeholder="Chủ đề" required />
                 </div>
                 <div class="form-control">
-                    <textarea id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <textarea id="" cols="30" rows="10" placeholder="Tin nhắn của bạn"></textarea>
                 </div>
                 <action-button btnvalue="Submit" />
             </form>
@@ -111,14 +111,14 @@ export default {
                     image: require("@/assets/images/people/nguyendiepanh.jpg"),
                     name: "Nguyễn Diệp Anh",
                     position: "Chief Marketing Officer (CMO)",
-                    phone: "+1-222-222-2222",
+                    phone: "0355486388",
                     email: "anhnd@vietfarm.vn",
                 },
                 {
                     image: require("@/assets/images/people/nguyenphuonguyen.jpg"),
                     name: "Nguyễn Phương Uyên",
                     position: "Creative",
-                    phone: "+1-222-222-2222",
+                    phone: "0393529541",
                     email: "uyennp@vietfarm.vn",
                 },
                 {
@@ -131,7 +131,7 @@ export default {
                 {
                     image: require("@/assets/images/people/hoangminhhung.jpg"),
                     name: "Hoàng Minh Hùng",
-                    position: "IT Support",
+                    position: "Inventory manager",
                     phone: "0971617185",
                     email: "hunghm@vietfarm.vn",
                 },
@@ -139,7 +139,7 @@ export default {
                     image: require("@/assets/images/people/trinhcongminh.jpg"),
                     name: "Trịnh Công Minh",
                     position: "Chief technology officer (CTO)",
-                    phone: "+1-222-222-2222",
+                    phone: "0366780698",
                     email: "minhtc@vietfarm.vn",
                 },
             ],

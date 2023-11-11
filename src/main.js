@@ -7,6 +7,8 @@ import Antd from 'ant-design-vue';
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import VueAwesomePaginate from "vue-awesome-paginate";
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 const toastOption = {
     transition: "Vue-Toastification__bounce",
     maxToasts: 20,
@@ -15,4 +17,4 @@ const toastOption = {
 // import the necessary css file
 import "vue-awesome-paginate/dist/style.css";
 import "@/assets/css/styles.css"
-createApp(App).use(router).use(store).use(Toast, toastOption).use(Antd).use(VueAwesomePaginate).mount("#app");
+createApp(App).use(router).use(store).use(Toast, toastOption).use(CoolLightBox).use(Antd).use(VueAwesomePaginate).mount("#app");

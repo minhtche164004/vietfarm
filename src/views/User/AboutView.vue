@@ -1,6 +1,6 @@
 <template>
     <main-header />
-    <sub-header heading="Câu chuyện VietFarm- OCOP Nam Định" subHeading="Hiểu hơn về chúng tôi" />
+    <sub-header heading="Câu chuyện VietFarm- OCOP Việt Nam" subHeading="Hiểu hơn về chúng tôi" />
     <div class="container">
         <article>
             <img src="@/assets/images/logo.png" class="about-img" alt="Giới thiệu" />

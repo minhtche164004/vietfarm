@@ -12,28 +12,30 @@
                 <div class="img-thumbnails">
                     <img v-for="(image, index) in product.images.slice(0, 4)" :key="index" :src="image" class="thumbnail"
                         @click="setActiveImage(index)" />
+                    <div class="images-wrapper">
+                        <div class="image" v-for="(image, imageIndex) in product.images" :key="imageIndex"
+                            @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
+                    </div>
                 </div>
             </div>
             <div class="product-details">
                 <span>Home / {{ product.brand }}</span>
                 <h4>{{ product.name }}</h4>
                 <h4>{{ formattedPrice }}</h4>
-                <select v-model="size">
+                <!-- <select v-model="size">
                     <option disabled>Select Size</option>
                     <option>Medium</option>
                     <option>XL</option>
                     <option>XXL</option>
                     <option>Small</option>
-                </select>
+                </select> -->
                 <p class="weak" v-if="validSize">Please select a size</p>
                 <div class="add-to-cart">
                     <input type="number" placeholder="QTY" min="1" max="10" v-model="quantity" />
                     <action-button btnvalue="Add To Cart" @click="addItemToCart" />
                 </div>
                 <h4>Product Details</h4>
-                <p class="product-description">
-                    {{ product.description }}
-                </p>
+                <p class="product-description" v-html="product.description" />
             </div>
         </div>
 
@@ -66,6 +68,7 @@ export default {
             size: "Select Size",
             quantity: 1,
             validSize: false,
+            index: null,
         };
     },
     methods: {
@@ -74,9 +77,9 @@ export default {
             this.activeImage = this.product.images[image];
         },
         addItemToCart() {
-            if (this.size === "Select Size") {
-                this.validSize = true;
-            } else {
+            // if (this.size === "Select Size") {
+            //     this.validSize = true;
+            // } else {
                 let item = {
                     ...this.product,
                     quantity: this.quantity,
@@ -84,7 +87,7 @@ export default {
                 };
                 this.add_to_cart(item);
                 useToast().success('Thêm vào giỏ hàng thành công!', { timeout: 1000 })
-            }
+            // }
         },
     },
     computed: {
@@ -160,8 +163,8 @@ export default {
 }
 
 .img-thumbnails .thumbnail {
-    height: auto;
-    max-width: 100%;
+    height: 100px;
+    width: 100%;
     cursor: pointer;
 }
 

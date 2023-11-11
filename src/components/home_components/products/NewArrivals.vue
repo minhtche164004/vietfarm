@@ -1,7 +1,7 @@
 <template>
     <section class="products">
-        <h2>New Arrivals</h2>
-        <p class="highlight">The latest products we have on sale</p>
+        <h2>Sản phẩm bán chạy</h2>
+        <p class="highlight">Top những sản phẩm bán chạy nhất của chúng tôi</p>
         <div class="container">
             <div class="product__container" v-if="newArrivals">
                 <product-card v-for="(product, index) in newArrivals" :key="index" :productId="product._id"

@@ -1,7 +1,7 @@
 <template>
     <section class="products">
-        <h2>Featured Products</h2>
-        <p class="highlight">The best selling products we have on sale.</p>
+        <h2>Giờ vàng giá sốc</h2>
+        <p class="highlight">Những sản phẩm đang được giảm giá kịch sàn.</p>
         <div class="product__container" v-if="featuredProducts">
             <product-card
                 v-for="(product, index) in featuredProducts"

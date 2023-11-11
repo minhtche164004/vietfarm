@@ -1,23 +1,23 @@
 <template>
     <section class="services">
-        <h2>Services</h2>
+        <h2>Dịch vụ</h2>
         <div class="service-container">
-            <service-card name="Free Shipping">
-                <img src="@/assets/images/shipping.svg" alt="Free shipping" /></service-card>
+            <service-card name="Miễn phí vận chuyển">
+                <img src="@/assets/images/shipping.svg" alt="Miễn phí vận chuyển" /></service-card>
 
-            <service-card name="Easy Order">
-                <img src="@/assets/images/order.svg" alt="Easy Order" />
+            <service-card name="Dễ dàng đặt hàng">
+                <img src="@/assets/images/order.svg" alt="Dễ dàng đặt hàng" />
             </service-card>
-            <service-card name="Smart Saving">
-                <img src="@/assets/images/savings.svg" alt="Smart Saving" />
+            <service-card name="Tiết kiệm">
+                <img src="@/assets/images/savings.svg" alt="Tiết kiệm" />
             </service-card>
-            <service-card name="Promotions">
-                <img src="@/assets/images/promos.svg" alt="Promotions" />
+            <service-card name="Khuyến mãi sập sàn">
+                <img src="@/assets/images/promos.svg" alt="Khuyến mãi sập sàn" />
             </service-card>
-            <service-card name="24/7 Support">
+            <service-card name="Đội ngũ hỗ trợ 24/7">
                 <img src="@/assets/images/support.svg" alt="24/7 Support" /></service-card>
-            <service-card name="Home Delivery">
-                <img src="@/assets/images/delivery.svg" alt="Home Delivery" />
+            <service-card name="Giao hàng tận nhà">
+                <img src="@/assets/images/delivery.svg" alt="Giao hàng tận nhà" />
             </service-card>
         </div>
     </section>

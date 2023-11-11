@@ -69,6 +69,11 @@ const routes = [
     component: () => import("../views/User/CartItemView.vue"),
   },
   {
+    path: '/privacy',
+    name: 'Privacy Policy',
+    component: () => import("../views/User/PrivacyPolicyView.vue"),
+  },
+  {
     path: '/admin',
     name: 'admin',
     component: () => import("../views/Admin/Admin Views/AdminPage.vue"),

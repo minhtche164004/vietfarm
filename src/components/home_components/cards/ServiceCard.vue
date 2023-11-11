@@ -24,6 +24,7 @@ export default {
     padding: 10px 25px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.05s ease-in;
+    align-items: center;
 }
 
 .service__card:hover {

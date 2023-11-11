@@ -1,10 +1,10 @@
 <template>
     <section class="banner">
         <div class="container">
-            <p>Discount Sales</p>
-            <h2>Get up to 70% Off on All t-shirts and accessories!</h2>
+            <p>Giảm giá sản phẩm</p>
+            <h2>Giảm giá tới 70% cho tất cả món đồ khô!</h2>
             <router-link to="/shop" aria-label="Go to shop">
-                <button aria-label="Explore Now">Explore Now</button>
+                <button aria-label="Khám phá ngay">Khám phá ngay</button>
             </router-link>
         </div>
     </section>

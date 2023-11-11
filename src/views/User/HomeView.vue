@@ -3,8 +3,8 @@
     <section class="hero__section">
         <div class="container">
             <div class="hero__text">
-                <h1>VietFarm - OCOP Nam Định </h1>
-                <h2>Bản sắc người Nam Định</h2>
+                <h1>VietFarm - OCOP Việt Nam </h1>
+                <h2>Bản sắc người Việt Nam</h2>
                 <p>Nơi buôn bán các sản phẩm mặt hàng đạt chuẩn OCOP của Nam Định</p>
                 <router-link to="/shop">
                     <action-button btnvalue="Mua hàng" />
@@ -21,9 +21,9 @@
 
     <banner-section />
     <new-arrivals :newArrivals="newArrivals" />
-    <advert-section />
+    <!-- <advert-section />
     <news-letter />
-    <zalo-chat />
+    <zalo-chat /> -->
     <main-footer />
 </template>
 
@@ -66,10 +66,10 @@ export default {
     },
     computed: {
         featuredProducts() {
-            return this.products.slice(1, 5);
+            return this.$store.state.productsfix.slice(1, 5);
         },
         newArrivals() {
-            return this.products.slice(5, 9);
+            return this.$store.state.productsfix.slice(0, 4);
         },
     },
     async created() {

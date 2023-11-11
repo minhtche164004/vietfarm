@@ -71,11 +71,11 @@ export default {
     created() {
         // this.getProducts();
         this.getProductsVietFarm();
-
     },
     methods: {
         getProductsVietFarm() {
             this.products = this.$store.state.productsfix
+            console.log(this.$store.state.productsfix)
             this.loaded = true
         },
         getProducts() {
@@ -111,7 +111,7 @@ export default {
 
 <style>
 .product__card img {
-    width: 242px;
+    /* width: 242px; */
     /* Điều chỉnh chiều rộng theo ý muốn */
     height: 322.66px;
     /* Điều chỉnh chiều cao theo ý muốn */
