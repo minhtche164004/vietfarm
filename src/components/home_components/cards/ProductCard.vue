@@ -60,6 +60,7 @@ export default {
 
 .product__image {
     /* height: auto; */
+    height: 322.66px;
     max-width: 100%;
     border-radius: 5px;
 }
